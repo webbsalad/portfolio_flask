@@ -11,3 +11,20 @@ def index():
 @app.route('/about')
 def about():
     return render_template("about.html")
+
+@app.route('/prog')
+def prog():
+    return render_template("prog.html")
+
+@app.route('/db')
+def db():
+    return render_template("db.html")
+
+@app.route('/cw')
+def cw():
+    return render_template("cw.html")
+
+@app.route('/swt')
+def swt():
+    return render_template("swt.html")
+
