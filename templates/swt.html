@@ -1,9 +1,26 @@
-<a href="/">
-    <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Системные веб технологии</h1>
-        </div>
-        </div>
-    </section>
-</a>
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <a href="/">
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Системные веб технологии</h1>
+            </div>
+            </div>
+        </section>
+    </a>
+
+</main>
+
+<footer class="text-body-secondary py-5">
+    <div class="container">
+      <h2>
+          <p class="float-end mb-1">
+              <a href="#" >Вверх</a>
+          </p>
+      </h2>
+    </div>
+</footer>  
+{% endblock %}

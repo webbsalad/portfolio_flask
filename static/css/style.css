@@ -1,5 +1,10 @@
 a{
   color: #3e456d;
+  display: inline-block;
+}
+
+a:hover, a:focus {
+  transform: translateY(-5px);
 }
 
 a.no-decoration {
@@ -17,25 +22,14 @@ body{
 
 }
 
-@media (orientation: portrait) {
-  body{
-    background-image: url('/static/img/background_port.svg');
-  }
-
-  .row{
-    justify-content: center;
-  }
-  
-}
-@media (orientation: landscape) {
-}
 
 .content {
   margin: 10px;
   padding: 10px;
-  background: linear-gradient(to right top, #c0c7ea, #ffffff);
+  color:white;
+  background-color: rgb(133, 145, 205);
   border-radius: 30px;
-  border: 2px solid #6777c723;
+  border: 2px solid #0000003f;
 }
 
 .col {
@@ -80,29 +74,72 @@ body{
   border-radius: 5px; 
 }
 
-.photo {
-  border-radius: 20px;
-  width: 30%;
-  max-width: 30%;
-  float: left;
-}
-
-.photo img {
-  margin: 10px;
-  width: 100%; 
-  height: auto; 
-  max-width: 100%; 
-  display: block;
-  border-radius: 30px;
-}
-
-.content-left {
-  padding: 20px;
-  width: 60%;  
-  float: right;
-}
 
 
 .card{
   border: 0px solid #ffffff00;
+}
+
+@media (orientation: portrait) {
+  body{
+    background-image: url('/static/img/background_port.svg');
+  }
+
+  .row{
+    justify-content: center;
+  }
+
+  .content {
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    color:white;
+    background-color: rgb(133, 145, 205);
+    border-radius: 30px;
+    border: 2px solid #0000003f;
+  }
+
+  .photo {
+    width: 100%; 
+    float: center;
+    size: cover;
+    text-align: center;
+  }
+  
+  .photo img {
+    float: center;
+    width: 100%; 
+    height: auto; 
+    display: block;
+    border-radius: 30px;
+  }
+  
+  .content-left {
+    padding: 20px;
+    float: center;
+  }
+  
+}
+@media (orientation: landscape) {
+  .photo {
+    border-radius: 20px;
+    width: 30%;
+    max-width: 30%;
+    float: left;
+  }
+  
+  .photo img {
+    margin: 10px;
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    display: block;
+    border-radius: 30px;
+  }
+  
+  .content-left {
+    padding: 20px;
+    width: 60%;  
+    float: right;
+  }
 }
