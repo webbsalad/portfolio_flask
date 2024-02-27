@@ -1,25 +1,35 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
+<main>
     <a href="/">
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Суворов Роман</h1>
+                <h1 class="fw-light">О себе</h1>
             </div>
             </div>
         </section>
     </a>
-    <div>
-        <div class="photo">
-            <img src="static/img/face.png" alt="Фото">
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center">
+            <div>
+                <div class="photo">
+                    <img src="static/img/face.png" alt="Фото">
+                </div>
+                <div class="content-left content ">
+                    Приветствую! Я студент РГПУ имени Герцена обучаюсь на направлении Информатика вычислительная техника Технологии разработки програмного обеспечения на данном сайте собраны мои работы по направлениям: програмирование, базы данных, компьютерный практикум<br>
+                </div>
+            </div>
         </div>
-        <div class="content-left content ">
-            Приветствую! Я студент РГПУ имени Герцена обучаюсь на направлении Информатика вычислительная техника Технологии разработки програмного обеспечения на данном сайте собраны мои работы по направлениям: програмирование, базы данных, компьютерный практикум<br>
         </div>
     </div>
-</div>
+            
+
+</main>
 
 <footer class="text-body-secondary py-5">
     <div class="container">
