@@ -7,11 +7,11 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Суворов Роман</h1>
-        <p class="lead text-body-secondary content">Данное портфолио создано студентом РГПУ имени Герцена с целью размещения на нем информации о выполненных работах</p>
+        <h1 class="fw-light">{{ _('Суворов Роман') }}</h1>
+        <p class="lead text-body-secondary content">{{ _('Данное портфолио создано студентом РГПУ имени Герцена с целью размещения на нем информации о выполненных работах') }}</p>
         <p>
-          <a href="/about" class="btn btn-primary my-2">О себе</a>
-          <a href="https://t.me/webbbsalad" class="btn btn-secondary my-2">Telegram</a>
+          <a href="{{ url_for('about', lang=get_locale()) }}" class="btn btn-primary my-2">{{ _('О себе') }}</a>
+          <a href="https://t.me/webbbsalad" class="btn btn-secondary my-2">{{ _('Телеграм') }}</a>
         </p>
       </div>
     </div>
@@ -22,80 +22,80 @@
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center">
         
-        <a href="/prog" class="no-decoration">
+        <a href="{{ url_for('prog', lang=get_locale()) }}" class="no-decoration">
             <div class="col">
                 <div class="card">
                     <div class="svg-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" viewBox="0 0 100 100">
                             <path d="M10 20h80c2.209 0 4 1.791 4 4v48c0 2.209-1.791 4-4 4H10c-2.209 0-4-1.791-4-4V24c0-2.209 1.791-4 4-4z" fill="#ccc"/>
                             <path d="M8 24v48c0 2.209 1.791 4 4 4h80c2.209 0 4-1.791 4-4V24c0-2.209-1.791-4-4-4H12c-2.209 0-4 1.791-4 4zm80 4v4H12v-4h76zm-76 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm-4-32h4v4h-4v-4z" fill="#6c6c6c"/>
-                            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="#fff">ПРОГ4</text>
+                            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="#fff">{{ _('ПРОГ4') }}</text>
                         </svg>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Тут собранны сделанные работы по дисциплине "програмирование"</p>
+                        <p class="card-text">{{ _('Тут собранны сделанные работы по дисциплине "програмирование"') }}</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-body-secondary">2 работы</small>
+                            <small class="text-body-secondary">2 {{ _('работы') }}</small>
                     </div>
                 </div>
                 </div>
             </div>
         </a>
 
-        <a href="/db" class="no-decoration">
+        <a href="{{ url_for('db', lang=get_locale()) }}" class="no-decoration">
             <div class="col">
                 <div class="card">
                     <div class="svg-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" viewBox="0 0 100 100">
                             <path d="M10 20h80c2.209 0 4 1.791 4 4v48c0 2.209-1.791 4-4 4H10c-2.209 0-4-1.791-4-4V24c0-2.209 1.791-4 4-4z" fill="#ccc"/>
                             <path d="M8 24v48c0 2.209 1.791 4 4 4h80c2.209 0 4-1.791 4-4V24c0-2.209-1.791-4-4-4H12c-2.209 0-4 1.791-4 4zm80 4v4H12v-4h76zm-76 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm-4-32h4v4h-4v-4z" fill="#6c6c6c"/>
-                            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="#fff">БД</text>
+                            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="#fff">{{ _('БД') }}</text>
                         </svg>
                     </div>
                 <div class="card-body">
-                    <p class="card-text">Тут собранны сделанные работы по дисциплине "Базы данных"</p>
+                    <p class="card-text">{{ _('Тут собранны сделанные работы по дисциплине "Базы данных"') }}</p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-body-secondary">0 работ</small>
+                        <small class="text-body-secondary">0 {{ _('работ') }}</small>
                     </div>
                 </div>
                 </div>
             </div>
         </a>
 
-        <a href="/cw" class="no-decoration">
+        <a href="{{ url_for('cw', lang=get_locale()) }}" class="no-decoration">
             <div class="col">
                 <div class="card">
                     <div class="svg-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" viewBox="0 0 100 100">
                             <path d="M10 20h80c2.209 0 4 1.791 4 4v48c0 2.209-1.791 4-4 4H10c-2.209 0-4-1.791-4-4V24c0-2.209 1.791-4 4-4z" fill="#ccc"/>
                             <path d="M8 24v48c0 2.209 1.791 4 4 4h80c2.209 0 4-1.791 4-4V24c0-2.209-1.791-4-4-4H12c-2.209 0-4 1.791-4 4zm80 4v4H12v-4h76zm-76 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm-4-32h4v4h-4v-4z" fill="#6c6c6c"/>
-                            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="#fff">КП</text>
+                            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="#fff">{{ _('КП') }}</text>
                         </svg>
                     </div>
                 <div class="card-body">
-                    <p class="card-text">Тут собранны сделанные работы по дисциплине "Компьютерный практикум"</p>
+                    <p class="card-text">{{ _('Тут собранны сделанные работы по дисциплине "Компьютерный практикум"') }}</p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-body-secondary">3 работы</small>
+                        <small class="text-body-secondary">3 {{ _('работы') }}</small>
                     </div>
                 </div>
                 </div>
             </div>
         </a>
 
-        <a href="/swt" class="no-decoration">
+        <a href="{{ url_for('swt', lang=get_locale()) }}" class="no-decoration">
             <div class="col">
                 <div class="card">
                     <div class="svg-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" viewBox="0 0 100 100">
                             <path d="M10 20h80c2.209 0 4 1.791 4 4v48c0 2.209-1.791 4-4 4H10c-2.209 0-4-1.791-4-4V24c0-2.209 1.791-4 4-4z" fill="#ccc"/>
                             <path d="M8 24v48c0 2.209 1.791 4 4 4h80c2.209 0 4-1.791 4-4V24c0-2.209-1.791-4-4-4H12c-2.209 0-4 1.791-4 4zm80 4v4H12v-4h76zm-76 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm0 8h76v4H12v-4zm-4-32h4v4h-4v-4z" fill="#6c6c6c"/>
-                            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="#fff">СВТ</text>
+                            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="#fff">{{ _('СВТ') }}</text>
                         </svg>
                     </div>
                     <div class="card-body">
-                    <p class="card-text">Тут собранны сделанные работы по дисциплине "Серверные веб технологии"</p>
+                    <p class="card-text">{{ _('Тут собранны сделанные работы по дисциплине "Серверные веб технологии"') }}</p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-body-secondary">0 работ</small>
+                        <small class="text-body-secondary">0 {{ _('работ') }}</small>
                     </div>
                 </div>
                 </div>
@@ -113,7 +113,7 @@
   <div class="container">
     <h2>
         <p class="float-end mb-1">
-            <a href="#" >Вверх</a>
+            <a href="#" >{{ _('Вверх') }}</a>
         </p>
     </h2>
   </div>

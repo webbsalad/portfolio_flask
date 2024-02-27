@@ -1,3 +1,8 @@
 bulma/
 .idea/
 __pycache__/
+
+babel.cfg
+help.txt
+
+

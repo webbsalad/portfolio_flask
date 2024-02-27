@@ -2,11 +2,11 @@
 
 {% block content %}
 <main>
-    <a href="/" class="no-decoration">
+    <a href="{{ url_for('index', lang=get_locale()) }}" class="no-decoration">
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Базы данных</h1>
+                <h1 class="fw-light">{{ _('Базы данных') }}</h1>
             </div>
             </div>
         </section>
@@ -18,7 +18,7 @@
     <div class="container">
       <h2>
           <p class="float-end mb-1">
-              <a href="#" >Вверх</a>
+              <a href="#" >{{ _('Вверх') }}</a>
           </p>
       </h2>
     </div>

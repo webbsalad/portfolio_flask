@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-27 16:28+0300\n"
+"POT-Creation-Date: 2024-02-27 21:45+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: templates/index.html:9
+#: templates/about.html:9 templates/index.html:13
+msgid "О себе"
+msgstr ""
+
+#: templates/about.html:24
+msgid ""
+"Приветствую! Я студент РГПУ имени Герцена обучаюсь на направлении "
+"Информатика вычислительная техника Технологии разработки програмного "
+"обеспечения на данном сайте собраны мои работы по направлениям: "
+"програмирование, базы данных, компьютерный практикум"
+msgstr ""
+
+#: templates/about.html:38 templates/cw.html:68 templates/db.html:21
+#: templates/index.html:116 templates/prog.html:55 templates/swt.html:21
+msgid "Вверх"
+msgstr ""
+
+#: templates/base.html:8 templates/index.html:10
 msgid "Суворов Роман"
-msgstr "Suvorov Roman"
+msgstr ""
+
+#: templates/cw.html:9
+msgid "Компьютерный практикум"
+msgstr ""
+
+#: templates/cw.html:26 templates/cw.html:39 templates/cw.html:52
+#: templates/prog.html:26 templates/prog.html:39
+msgid "ЛР"
+msgstr ""
+
+#: templates/db.html:9
+msgid "Базы данных"
+msgstr ""
+
+#: templates/index.html:11
+msgid ""
+"Данное портфолио создано студентом РГПУ имени Герцена с целью размещения "
+"на нем информации о выполненных работах"
+msgstr ""
+
+#: templates/index.html:14
+msgid "Телеграм"
+msgstr ""
+
+#: templates/index.html:32
+msgid "ПРОГ4"
+msgstr ""
+
+#: templates/index.html:36
+msgid "Тут собранны сделанные работы по дисциплине \"програмирование\""
+msgstr ""
+
+#: templates/index.html:38 templates/index.html:78
+msgid "работы"
+msgstr ""
+
+#: templates/index.html:52
+msgid "БД"
+msgstr ""
+
+#: templates/index.html:56
+msgid "Тут собранны сделанные работы по дисциплине \"Базы данных\""
+msgstr ""
+
+#: templates/index.html:58 templates/index.html:98
+msgid "работ"
+msgstr ""
+
+#: templates/index.html:72
+msgid "КП"
+msgstr ""
+
+#: templates/index.html:76
+msgid "Тут собранны сделанные работы по дисциплине \"Компьютерный практикум\""
+msgstr ""
+
+#: templates/index.html:92
+msgid "СВТ"
+msgstr ""
+
+#: templates/index.html:96
+msgid "Тут собранны сделанные работы по дисциплине \"Серверные веб технологии\""
+msgstr ""
+
+#: templates/prog.html:9
+msgid "Программирование"
+msgstr ""
+
+#: templates/swt.html:9
+msgid "Системные веб технологии"
+msgstr ""
 
