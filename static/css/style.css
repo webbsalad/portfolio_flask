@@ -27,7 +27,7 @@ body{
   margin: 10px;
   padding: 10px;
   color:white;
-  background-color: rgb(133, 145, 205);
+  background-color: rgb(156, 164, 203);
   border-radius: 30px;
   border: 2px solid #0000003f;
 }
@@ -70,7 +70,7 @@ body{
 }
 
 .card-text::-webkit-scrollbar-thumb {
-  background-color: #6777c7; 
+  background-color: #b6b8e3; 
   border-radius: 5px; 
 }
 
@@ -94,7 +94,7 @@ body{
     margin: 10px;
     padding: 10px;
     color:white;
-    background-color: rgb(133, 145, 205);
+    background-color: #f0f1fa;
     border-radius: 30px;
     border: 2px solid #0000003f;
   }
