@@ -14,12 +14,29 @@ def get_locale():
 
 babel.init_app(app, locale_selector=get_locale)
 
+def get_work_count(endpoint):
+    response = requests.get(endpoint)
+    return len(response.json()) if response.status_code == 200 else 0
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
-        return render_template("index.html", get_locale=get_locale)
+        work_counts = {
+            'prog': get_work_count('https://portfolio-rest-api-kohl.vercel.app/prog'),
+            'db': get_work_count('https://portfolio-rest-api-kohl.vercel.app/db'),
+            'cw': get_work_count('https://portfolio-rest-api-kohl.vercel.app/cw'),
+            'swt': get_work_count('https://portfolio-rest-api-kohl.vercel.app/swt')
+        }
+        sections = [
+            {'url': 'prog', 'name': _('ПРОГ4'), 'desc': _('Тут собранны сделанные работы по дисциплине "програмирование"'), 'count': work_counts['prog']},
+            {'url': 'db', 'name': _('БД'), 'desc': _('Тут собранны сделанные работы по дисциплине "Базы данных"'), 'count': work_counts['db']},
+            {'url': 'cw', 'name': _('КП'), 'desc': _('Тут собранны сделанные работы по дисциплине "Компьютерный практикум"'), 'count': work_counts['cw']},
+            {'url': 'swt', 'name': _('СВТ'), 'desc': _('Тут собранны сделанные работы по дисциплине "Серверные веб технологии"'), 'count': work_counts['swt']}
+        ]
+        print(sections)
+        return render_template("index.html", sections=sections, get_locale=get_locale)
     elif request.method == 'POST':
-        return 'это пост запрос)'
+        return ')'
 
 @app.route('/about')
 def about():

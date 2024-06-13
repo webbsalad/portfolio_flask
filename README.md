@@ -18,9 +18,7 @@ D:.
 ├───templates            // html файлы
 ├───translations         // файлы для перевода стираницы
 │   ├───en
-│   │   └───LC_MESSAGES
 │   └───ru
-│       └───LC_MESSAGES
 └───app.py               // основной файл
 ```
 
